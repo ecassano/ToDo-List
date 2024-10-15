@@ -1,9 +1,15 @@
-import './App.css'
+import './App.module.css';
+import Header from './components/Header';
+import TaskCreator from './components/TaskCreator';
+import './global.css';
 
-function App() {
+const App = () => {
 
   return (
-    <h1>App</h1>
+    <div>
+      <Header />
+      <TaskCreator />
+    </div>
   )
 }
 
