@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   gap: .5rem;
-  width: 46rem;
+  max-width: 46rem;
   margin: calc(0px - 3.375rem/2) auto 0 auto;
 }
 
@@ -46,4 +46,11 @@
 
 .task-creator input:focus{
   border-color: var(--purple-dark);
+}
+
+@media screen and (max-width: 768px){
+  .task-creator{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
