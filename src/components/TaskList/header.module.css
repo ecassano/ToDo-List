@@ -1,0 +1,28 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.header > aside{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .875rem;
+  font-weight: bold;
+}
+
+.header > aside:first-child > p{
+  color: var(--blue);
+}
+.header > aside:last-child > p{
+  color: var(--purple);
+}
+
+.header > aside > span{
+  color: var(--white);
+  background-color: var(--gray-400);
+  font-size: .75rem;
+  padding: 2px 8px;
+  border-radius: 16px;
+}

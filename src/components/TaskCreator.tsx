@@ -1,5 +1,5 @@
 import { PlusCircle } from 'phosphor-react';
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 
 import styles from './taskCreator.module.css';
 
@@ -10,12 +10,12 @@ const TaskCreator = () => {
     setTask(e.target.value);
   }
 
-  const handleSubmit = (e: SubmitEvent) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   }
 
   return (
-    <form className={styles['task-creator']}>
+    <form className={styles['task-creator']} onSubmit={handleSubmit}>
       <input
         type="text"
         name="task"

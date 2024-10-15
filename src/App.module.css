@@ -1,0 +1,11 @@
+.taskList{
+  max-width: 46rem;
+  margin: 4rem auto 0 auto;
+}
+
+@media screen and (max-width: 768px){
+  .taskList{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
