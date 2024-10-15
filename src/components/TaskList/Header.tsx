@@ -10,11 +10,11 @@ const Header = ({ criadas, concluidas }: Props) => {
     <div className={styles.header}>
       <aside>
         <p>Tarefas criadas</p>
-        <span>0</span>
+        <span>{criadas}</span>
       </aside>
       <aside>
         <p>Concluídas</p>
-        <span>0</span>
+        <span>{criadas === 0 ? "0" : `${concluidas} de ${criadas}`}</span>
       </aside>
     </div>
   )

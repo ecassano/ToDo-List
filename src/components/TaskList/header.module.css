@@ -21,7 +21,7 @@
 
 .header > aside > span{
   color: var(--white);
-  background-color: var(--gray-400);
+  background: var(--gray-400);
   font-size: .75rem;
   padding: 2px 8px;
   border-radius: 16px;
